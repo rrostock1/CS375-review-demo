@@ -7,4 +7,15 @@ function calculateTotal(items) {
   return total;
 }
 
-module.exports = { calculateTotal };
+// Applies a discount code to an order total
+function applyDiscount(total, discountCode) {
+  if (discountCode == "SAVE10") {
+    return total - (total * 0.1);
+  }
+  if (discountCode == "SAVE20") {
+    return total - (total * 0.2);
+  }
+  return total;
+}
+
+module.exports = { calculateTotal, applyDiscount };

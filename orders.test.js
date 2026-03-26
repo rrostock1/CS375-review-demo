@@ -1,5 +1,5 @@
 const { calculateTotal } = require('./orders');
-
+//test comment
 test('calculates total for multiple items', () => {
   const items = [
     { price: 10, quantity: 2 },
